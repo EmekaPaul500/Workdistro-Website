@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.workdistro-fig {
+  display: flex;
+  justify-content: safe;
+}
+
+.workdistro-fig-fig {
+  margin-left: -50px;
+}
+
+
+
+.closed-div {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100vh;
+}
+
+.closed-div::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  content: "";
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+}
+
+.closed-secondDiv {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  background: #ffffff;
+  z-index: 200;
+  width: 70%;
+  height: 100vh;
+}
+
+.closed-secondBtnDiv{
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+.closed-secondBtnDiv button{
+  width: fit-content;
+  margin: 2rem 0 0 2rem;
+}
+
+.closed-btn {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+header div {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-img {
+  margin-right: 12px;
+}
+
+.waitlist-btn {
+  background: #1f2a47;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.8rem 1.7rem 0.8rem 1.7rem;
+}
+
+.contact-us-btn {
+  background: #ffffff;
+  color: #1f2a47;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+}
+
+.harmburger {
+  display: none;
+}
+
+.harmburger button,
+.closed-btn {
+  background: transparent;
+  border: 0;
+}
+
+.first-sec h1,
+.first-sec p {
+  text-align: center;
+  margin: 1.3rem 0;
+}
+
+span {
+  color: #31de9e;
+}
+
+.first-sec button {
+  display: block;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  background: #1f2a47;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 0;
+  margin: auto;
+  margin-block: 2rem;
+}
+
+.first-sec h1 {
+  font-size: clamp(0.5rem, 6vw, 4.3rem);
+}
+
+.first-sec p {
+  font-size: clamp(12px, 4vw, 20px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  background: #1f2a47;
+  padding: 1.5rem;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.second-sec {
+  padding-block: 3rem;
+}
+
+.second-sec img {
+  width: 150px;
+}
+
+.second-sec h2 {
+  font-size: clamp(1.2rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.second-sec > p {
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.second-sec > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  padding-block: 2rem;
+  justify-content: space-between;
+}
+
+.second-sec > div > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.third-sec {
+  background: #1f2a47;
+  /* background: #15cc2e; */
+
+  padding: 3rem 0;
+  margin-block: 1.5rem;
+}
+
+.third-sec h1 {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.third-sec > div > p {
+  color: #ffffff;
+  font-size: clamp(0.8rem, 7vw, 1.2rem);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.third-sec .third-sec-div {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  padding-block: 3rem;
+}
+
+.third-sec-div div {
+  text-align: center;
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+.third-sec-div div h3 {
+  font-size: clamp(1.3rem, 5vw, 1.5rem);
+  color: #111727;
+  margin: 1rem 0;
+}
+
+.third-sec-div div p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+.fourth-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-sec div {
+  max-width: 600px;
+}
+
+.fourth-sec h1 {
+  font-size: clamp(0.8rem, 3vw, 1.8rem);
+  margin: 2rem 0;
+}
+
+.fourth-sec .form-div {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1.5rem;
+}
+
+.form-div > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2em;
+  margin: 1rem 0;
+}
+
+.fourth-sec input {
+  /* display: block; */
+  width: 100%;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  padding: 0 0.5rem;
+}
+
+.fourth-sec input:focus {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  outline: 0;
+}
+
+.fourth-sec button {
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  color: #ffffff;
+  background: #1f2946;
+  border-radius: 8px;
+  margin-top: 0.6rem;
+}
+
+.footer {
+  display: flex;
+  gap: 5em;
+  padding-block: 3rem;
+}
+
+.footer h3 {
+  color: #1f2946;
+}
+
+.footer-last-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.footer-last-div form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-last-div input {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgb(90, 90, 90);
+  margin: 0.6rem 0;
+}
+
+.footer-last-div input:focus {
+  outline: 0;
+}
+
+.footer-last-div button {
+  background: #1f2946;
+  padding: 0.6rem 2rem;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+}
+
+.connect-div > div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.contact-us-div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .harmburger {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .grid-hide {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .second-sec > div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+  }
+
+  .second-sec h2 {
+    margin-top: 2rem;
+  }
+
+  .third-sec .third-sec-div {
+    flex-direction: column;
+  }
+
+  .fourth-sec {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
