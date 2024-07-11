@@ -380,3 +380,8 @@ span {
     flex-direction: column;
   }
 }
+
+
+#join:disabled{
+  background-color :gray;
+}

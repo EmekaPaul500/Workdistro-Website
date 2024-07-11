@@ -11,3 +11,19 @@ closedBtn.addEventListener("click", () => {
   harmburger.style.display = "block";
   closedDiv.style.display = "none";
 });
+
+let waitlistTrigger = document.getElementById("waiter");
+let contactTrigger = document.getElementById("waitress");
+let footer = document.getElementById("footerTarget");
+let form = document.getElementById("formTarget");
+
+waitlistTrigger.addEventListener("click", () => {
+  harmburger.style.display = "block";
+  closedDiv.style.display = "none";
+  form.scrollIntoView({ behavior: "smooth" });
+});
+contactTrigger.addEventListener("click", () => {
+  harmburger.style.display = "block";
+  closedDiv.style.display = "none";
+  footer.scrollIntoView({ behavior: "smooth" });
+});

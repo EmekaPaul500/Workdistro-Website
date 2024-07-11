@@ -28,11 +28,11 @@
 
       <div>
         <div class="hide">
-          <button class="waitlist-btn">
+          <button class="waitlist-btn formTrigger">
             <img src="./images/Vector (1).png" alt="" class="btn-img" />
             Join the Waitlist
           </button>
-          <button class="contact-us-btn">
+          <button class="contact-us-btn" id="contactTrigger">
             <img src="./images/Vector1.png" alt="" class="btn-img" />Contact Us
           </button>
         </div>
@@ -58,7 +58,7 @@
           student, a busy professional, or just need an extra hand, we've got
           you covered.
         </p>
-        <button>
+        <button class="formTrigger">
           <img src="./images/Vector (1).png" alt="" class="btn-img" />
           JOIN THE WAITLIST
         </button>
@@ -226,7 +226,7 @@
         <figure>
           <img src="./images/Group 48.png" alt="" />
         </figure>
-        <div>
+        <div id="formTarget">
           <h1>
             Reserve your place! Complete the form below to be one of the first
             to experience <span>Workdistro</span>.
@@ -235,19 +235,20 @@
             Thank you for joining the Workdistro waitlist! We’ll keep you
             updated with our latest news and launch details.
           </p>
-          <form action="">
+          <form action="" >
             <!-- form div -->
             <div class="form-div">
               <div>
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="Your Email" />
+                <input type="text" placeholder="Your Name" id="name"  required/>
+                <input type="email" placeholder="Your Email" id="email" required/>
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
-                <input type="text" placeholder="  Interest Optional" />
+                <input  placeholder="Phone Number"  maxlength=11 minlength= 11 required id="number" />
+                <input type="text" placeholder="  Interest Optional" id="interest" />
               </div>
-              <button>
-                <img src="./images/Vector (1).png" alt="" class="btn-img" />JOIN
+              <p class="error" style="text-align: center; color: red;"></p>
+              <button id="join">
+                <img src="./images/Vector (1).png" alt="" class="btn-img"  />JOIN
                 THE WAITLIST
               </button>
             </div>
@@ -256,7 +257,7 @@
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer container" id="footerTarget">
       <!-- First footer div -->
       <div>
         <div class="workdistro-fig">
@@ -275,9 +276,9 @@
       <!-- Second div -->
       <div>
         <h3>CONTACT US</h3>
-        <div class="contact-us-div">
+        <div class="contact-us-div" style="display: flex; flex-direction: column; align-items: flex-start;">
           <div>
-            <img src="./images/Email.png" alt="" />
+        <i class="fa-regular fa-envelope"></i>
             <p><a href="#">Info@workdistroapp.com</a></p>
           </div>
           <div>
@@ -290,20 +291,25 @@
       <!-- Third div -->
       <div class="connect-div">
         <h3>CONNECT</h3>
-        <div>
-          <img src="./images/Linkedin.png" alt="" />
+        <div style="display: flex;align-items: center;">
+          <!-- <img src="./images/Linkedin.png" alt="" /> -->
+          <i class="fa-brands fa-linkedin"></i>
           <p>Linkedin</p>
         </div>
-        <div>
-          <img src="./images/X in.png" alt="" />
+        <div style="display: flex;align-items: center;">
+    
+          <!-- <i class="fa-brands fa-x-twitter" style="color: #B197FC;"></i> -->
+          <i class="fa-solid fa-x"></i>
           <p>X</p>
         </div>
-        <div>
-          <img src="./images/Facebook.png" alt="" />
+        <div style="display: flex;align-items: center;">
+          <!-- <img src="./images/Facebook.png" alt="" /> -->
+          <i class="fa-brands fa-facebook"></i>
           <p>Facebook</p>
         </div>
-        <div>
-          <img src="./images/instagram-fill.png" alt="" />
+        <div style="display: flex;align-items: center;">
+          <!-- <img src="./images/instagram-fill.png" alt="" /> -->
+          <i class="fa-brands fa-instagram"></i>
           <p>Instagram</p>
         </div>
       </div>
@@ -335,11 +341,11 @@
       <div class="closed-secondDiv">
 
         <div class="closed-secondBtnDiv">
-          <button class="waitlist-btn">
+          <button class="waitlist-btn" id="waiter">
             <img src="./images/Vector (1).png" alt="" class="btn-img" />
             Join the Waitlist
           </button>
-          <button class="contact-us-btn">
+          <button class="contact-us-btn" id="waitress">
             <img src="./images/Vector1.png" alt="" class="btn-img" />Contact Us
           </button>
           
@@ -350,5 +356,6 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
